@@ -1,0 +1,37 @@
+grid = [['.', '.', '.', '.', '.', '.'],
+        ['.', 'O', 'O', '.', '.', '.'],
+        ['O', 'O', 'O', 'O', '.', '.'],
+        ['O', 'O', 'O', 'O', 'O', '.'],
+        ['.', 'O', 'O', 'O', 'O', 'O'],
+        ['O', 'O', 'O', 'O', 'O', '.'],
+        ['O', 'O', 'O', 'O', '.', '.'],
+        ['.', 'O', 'O', '.', '.', '.'],
+        ['.', '.', '.', '.', '.', '.']]
+
+
+### For normal output
+##list1=[]
+##list2=''
+##for i in range(len(grid)):
+##    list1 = grid[i]
+##    print(list1)
+##    for j in range(len(list1)):
+##        list2 = list2 + list1[j]
+##    print(list2)
+##    list2=''
+
+### For Extraordinary output
+list2 = []
+list3 = []
+list4=''
+for l in range(len(grid[0])):
+    for i in range(len(grid)):
+        list2 = grid[i]
+        for j in range(l,len(list2)):
+            list3.append(list2[j])
+            break
+    for z in range(len(list3)):
+        list4=list4+list3[z]
+    print(list4)
+    list3 = []
+    list4 = ''
